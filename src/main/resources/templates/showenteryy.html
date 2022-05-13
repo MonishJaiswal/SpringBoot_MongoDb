@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Entered Details</title>
+</head>
+<body>
+<h1 style="text-align: center;color:green">You submitted below details</h1>
+	<div style="text-align: center;background-color:#90EE90;padding: 25px 50px;border: 2px solid black;border-radius: 50px">
+	<h2>
+	Student ID : <span th:text="${id}"></span><br>
+	Student Name : <span th:text="${name}"></span><br>
+	Student Grade :<span th:text="${grade}"></span><br>
+	</h2>
+	</div>
+	<div style="text-align: center;background-color:#ADD8E6;padding: 5px 5px;border: 2px solid black;border-radius: 50px">
+<h2>Click bleow button to go back to home page</h2>
+<a href="http://localhost:8081/welcome">
+<input type="submit" value="Home Page">
+</a>
+</div>
+<h4 style="text-align: center">
+	By Monish</h4>
+</body>
+</html>
